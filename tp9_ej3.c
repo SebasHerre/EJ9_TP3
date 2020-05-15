@@ -12,6 +12,10 @@ return 0;
 }
 
 int suma_digitos(int n1){
-
-   return ((n1 % 10) + suma_digitos(n1/10)); 
+   if((n1%10)==0){
+       return 0;  //caso base
+   }
+   else{
+       return ((n1 % 10) + suma_digitos(n1/10)); //recursividad
+   }
 }
